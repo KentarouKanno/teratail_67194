@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         dateFormatter.locale = NSLocale(localeIdentifier: "en_US") as Locale! // ロケールの設定
         dateFormatter.dateFormat = "yyyy年MM月dd日 HH:mm"//:ss" // 日付フォーマットの設定
         
-        let dateString = dateFormatter.string(from: person.time)
+        let dateString = dateFormatter.string(from: person.time as! Date)
         cell.detailTextLabel!.text = dateString
         
         return cell
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func saveName(name: String){
         let person = Person(entity: Person.entity(), insertInto: context)
         person.name = name
-        person.time = Date()
+        person.time = Date() as NSDate?
         
         do{
             try context.save()
@@ -94,7 +94,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func fetchRequest() {
         
         do{
-            let fetchRequest = Person.fetchRequest()
+            
+            let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Person")
+            
+            //let fetchRequest = Person.fetchRequest()
             let sortDescripter = NSSortDescriptor(key: "time", ascending: false)
             fetchRequest.sortDescriptors = [sortDescripter]
             

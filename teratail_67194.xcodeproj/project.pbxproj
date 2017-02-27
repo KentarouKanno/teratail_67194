@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366BDCA31E63DF7700CC2D97 /* teratail_67194.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36B0EC9C1E6239FC00463589 /* teratail_67194.xcdatamodeld */; };
+		36903C831E63E02500954DFF /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366BDC9F1E63DF1000CC2D97 /* Person+CoreDataClass.swift */; };
+		36903C841E63E02900954DFF /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366BDCA01E63DF1000CC2D97 /* Person+CoreDataProperties.swift */; };
 		36B0EC961E6239FC00463589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B0EC951E6239FC00463589 /* AppDelegate.swift */; };
 		36B0EC981E6239FC00463589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B0EC971E6239FC00463589 /* ViewController.swift */; };
 		36B0EC9B1E6239FC00463589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B0EC991E6239FC00463589 /* Main.storyboard */; };
-		36B0EC9E1E6239FC00463589 /* teratail_67194.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36B0EC9C1E6239FC00463589 /* teratail_67194.xcdatamodeld */; };
 		36B0ECA01E6239FC00463589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B0EC9F1E6239FC00463589 /* Assets.xcassets */; };
 		36B0ECA31E6239FC00463589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B0ECA11E6239FC00463589 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		366BDC9F1E63DF1000CC2D97 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		366BDCA01E63DF1000CC2D97 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		36B0EC921E6239FC00463589 /* teratail_67194.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teratail_67194.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B0EC951E6239FC00463589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36B0EC971E6239FC00463589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				36B0EC951E6239FC00463589 /* AppDelegate.swift */,
 				36B0EC971E6239FC00463589 /* ViewController.swift */,
 				36B0EC991E6239FC00463589 /* Main.storyboard */,
+				366BDC9F1E63DF1000CC2D97 /* Person+CoreDataClass.swift */,
+				366BDCA01E63DF1000CC2D97 /* Person+CoreDataProperties.swift */,
 				36B0EC9F1E6239FC00463589 /* Assets.xcassets */,
 				36B0ECA11E6239FC00463589 /* LaunchScreen.storyboard */,
 				36B0ECA41E6239FC00463589 /* Info.plist */,
@@ -141,8 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B0EC981E6239FC00463589 /* ViewController.swift in Sources */,
-				36B0EC9E1E6239FC00463589 /* teratail_67194.xcdatamodeld in Sources */,
+				36903C841E63E02900954DFF /* Person+CoreDataProperties.swift in Sources */,
+				36903C831E63E02500954DFF /* Person+CoreDataClass.swift in Sources */,
 				36B0EC961E6239FC00463589 /* AppDelegate.swift in Sources */,
+				366BDCA31E63DF7700CC2D97 /* teratail_67194.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,7 @@
 				36B0ECA91E6239FC00463589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
